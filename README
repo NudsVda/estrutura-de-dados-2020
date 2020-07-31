@@ -1,0 +1,15 @@
+# Learning Data Structures in C/C++
+
+Data Structures Class - 2020/2
+
+## Dear student!
+
+I'm using Linux (Ubuntu 20.04) and Visual Studio Code! Some configs are needed for compile, debug and run!
+
+## Manual Compile
+
+g++ src/MyFile.cpp -o build/MyCompiledFile
+
+## Manual run
+
+g++ ./build/MyCompiledFile
