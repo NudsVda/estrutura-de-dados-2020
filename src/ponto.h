@@ -1,9 +1,6 @@
 typedef struct ponto Ponto;
 
-struct ponto {
-    float x;
-    float y;
-};
+
 
 Ponto* ponto_cria (float x, float y);
 void ponto_libera (Ponto* p);
