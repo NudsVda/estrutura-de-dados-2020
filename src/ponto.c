@@ -4,7 +4,10 @@
 #include <stdio.h>
 #include <math.h>
 
-
+struct ponto {
+    float x;
+    float y;
+};
 
 Ponto* ponto_cria (float x, float y)
 {
