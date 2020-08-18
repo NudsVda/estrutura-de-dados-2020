@@ -1,8 +1,6 @@
 #ifndef MATRIZ_H
 #define MATRIZ_H
 
-
-
 typedef struct matriz Matriz;
 
 Matriz* matriz_cria (int m, int n);
