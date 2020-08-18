@@ -48,3 +48,13 @@ void matriz_atribui (Matriz* mat, int i, int j, float v) {
     }
     mat->v[i][j] = v; 
 }
+
+/* deve retornar o número de linhas da matriz */
+int matriz_linhas (Matriz* mat) {
+    return mat->lin;    
+}
+
+/* deve retornar o número de colunas da matriz */
+int matriz_colunas (Matriz* mat) {
+    return mat->col;
+}
