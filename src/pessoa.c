@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 Pessoa* cria_pessoa(char *nome,struct tm data_nascimento) 
 {
@@ -23,7 +24,34 @@ int calcula_idade(Pessoa* pessoa)
     return round(difftime(hoje,convertido) / 60 / 60 / 24 / 365);
 }
 
-const char *inverte_nome(Pessoa* pessoa)
+char* inverte_nome(Pessoa* pessoa)
 {
-    return "a";
+    char *invertido;
+    int i = 0, j = 0, k = 0;
+    int posicao_espaco = 0;
+
+    char *nome = pessoa->nome;
+    while(i < strlen(nome) || posicao_espaco == 0 ) {
+        if (nome[i] == ' ') {
+            posicao_espaco = i;
+        }
+        i++;        
+    }
+    j = posicao_espaco + 1;
+    i = 0;
+    while (j > posicao_espaco & j < strlen(nome))
+    {
+        invertido[i] = nome[j];
+        i++;
+        j++;
+    }
+    invertido[i++] = ' ';
+    j = 0;
+    while (j < posicao_espaco) {
+        invertido[i++] = nome[j];
+        j++;        
+    }
+    
+    return invertido;
+
 }

@@ -8,7 +8,7 @@ int main (void)
     int ano, mes, dia;
 
     printf("Digite seu nome: ");
-    scanf("%s",nome);    
+    scanf("%[^\n]",nome);    
 
     printf("\n Digite a data de nascimento: formato dd/mm/YYYY: ");
     scanf("%d/%d/%d",  &dia, &mes, &ano);        
@@ -20,8 +20,11 @@ int main (void)
     Pessoa* pessoa = cria_pessoa(nome,nascimento);            
 
     int idade = calcula_idade(pessoa);
+    
+    char *nome_reverso = inverte_nome(pessoa);
 
-    printf("Nossa, o %s tem %i!",pessoa->nome,idade);
+    printf("Nossa, o %s tem %i!",nome_reverso,idade);    
+    
 
     return 0;
 }

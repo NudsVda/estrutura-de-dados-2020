@@ -11,4 +11,4 @@ Pessoa* cria_pessoa(char *nome,struct tm data_nascimento);
 
 int calcula_idade(Pessoa* pessoa);
 
-const char *inverte_nome(Pessoa* pessoa);
+char* inverte_nome(Pessoa* pessoa);
