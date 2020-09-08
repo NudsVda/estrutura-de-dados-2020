@@ -15,7 +15,7 @@ int main (void)
 
     nascimento.tm_year = ano - 1900;
     nascimento.tm_mday = dia;
-    nascimento.tm_mon = mes -1 ;
+    nascimento.tm_mon = mes - 1 ;
 
     Pessoa* pessoa = cria_pessoa(nome,nascimento);            
 

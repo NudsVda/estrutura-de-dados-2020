@@ -3,8 +3,8 @@
 typedef struct pessoa Pessoa;
 
 struct pessoa {
-    char *nome;    
-    struct tm  data_nascimento;
+    char *nome;        
+    struct tm  data_nascimento;    
 };
 
 Pessoa* cria_pessoa(char *nome,struct tm data_nascimento);

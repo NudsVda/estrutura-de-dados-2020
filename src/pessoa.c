@@ -21,7 +21,7 @@ int calcula_idade(Pessoa* pessoa)
     time_t hoje = time(0);       
     
     time_t convertido = mktime(&pessoa->data_nascimento);          
-    return round(difftime(hoje,convertido) / 60 / 60 / 24 / 365);
+    return floor(difftime(hoje,convertido) / 60 / 60 / 24 / 365);
 }
 
 char* inverte_nome(Pessoa* pessoa)
